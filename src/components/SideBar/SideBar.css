@@ -1,34 +1,47 @@
 .sidebar ul {
-    margin: 40px 50px;
+    margin: 45px ;
     
 }
-
+    
 .sidebar li {
     list-style: none;
-    padding: 10px;
+    padding: 6px;
     font-size: 16px;
     display: flex;
     align-items: center;
 }
 
-.sidebar li i {
-    margin-right: 10px;
-}
 
 .sidebar li:hover {
     background-color: #0fd959;
     cursor: pointer;
 }
+.sidebar-avatar{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 40px ;
+    padding: 10px;
 
+}
 .btn2 {
     font-weight: bold;
     font-size: 1em;
-
     text-decoration: none;
-    color: #2a8b15;
+    color: #0a0a0a;
     display: inline-block;
     padding: 10px 40px 10px 40px;
     position: relative;
-    border: 3px solid #a25e5e;
+    border: 3px solid #5ea27e;
     border-radius: 20px;
 }
+.btn2:hover{
+    background-color: #0fd959;
+}
+.icon-with-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-with-text svg {
+    margin-right: 15px; 
+  }
