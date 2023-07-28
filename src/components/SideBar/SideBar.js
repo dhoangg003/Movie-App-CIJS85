@@ -2,8 +2,8 @@ import React from 'react'
 
 const SideBar = () => {
     return (
-        <div>
-
+        <div className='sidebar-wrapper'>
+            Side bar
         </div>
     )
 }

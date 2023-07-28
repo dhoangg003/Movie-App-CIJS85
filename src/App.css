@@ -14,3 +14,17 @@ body {
   padding: 0 40px;
   margin: 0 auto;
 }
+
+.app {
+  display: flex;
+}
+
+.sidebar-wrapper {
+  width: 300px;
+  background: yellow;
+  height: 100vh;
+}
+
+.main-content {
+  width: calc(100% - 300px);
+}
