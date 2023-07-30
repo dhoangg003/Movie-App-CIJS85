@@ -1,7 +1,7 @@
 import "./Homepage.css";
 import MovieListSlider from "../../components/MovieListSlider/MovieListSlider";
 import useFetchMovieByType from "../../hooks/useFetchMoviesByType";
-import SectionHero from "../../components/SectionHero/SectionHero";
+import SectionHero from "../../components/SectionHero.css/SectionHero";
 
 const Homepage = () => {
   const { loading: popularLoading, data: popularMovies } =
