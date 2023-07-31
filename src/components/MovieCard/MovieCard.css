@@ -1,6 +1,6 @@
 .movie-card {
-    width: calc(25% - 30px);
     cursor: pointer;
+    padding-right: 16px;
 }
 
 .movie-card img {
@@ -12,7 +12,9 @@
 }
 
 
-.movie-card h3 {
+.movie-card .movie-card-title {
     color: #fff;
-
+    color: "white";
+    padding: "24px";
+    text-decoration: "none";
 }

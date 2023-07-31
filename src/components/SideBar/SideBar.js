@@ -12,7 +12,6 @@ import { FaHandPointUp } from "react-icons/fa";
 import { FaCog } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import "typeface-roboto";
 
 const SideBar = () => {
   return (

@@ -15,12 +15,20 @@
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px rgba(165, 164, 164, 0.1);
 }
+
 .sidebar-avatar {
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 40px;
-  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
 }
+
+.sidebar-avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .btn2 {
   font-weight: bold;
   font-size: 1em;
