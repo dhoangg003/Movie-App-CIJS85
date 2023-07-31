@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideBar.css";
-import logo from "../../images/logo.jpg";
+import logo1 from "../../images/logo1.jpg";
 import { FaHome } from "react-icons/fa";
 import { FaFilm } from "react-icons/fa";
 import { FaTv } from "react-icons/fa";
@@ -17,7 +17,7 @@ const SideBar = () => {
   return (
     <div className="sidebar-wrapper">
       <div className="sidebar-avatar">
-        <img src={logo} alt="logo" />
+        <img src={logo1} alt="logo" />
       </div>
       <div className="sidebar">
         <ul>
