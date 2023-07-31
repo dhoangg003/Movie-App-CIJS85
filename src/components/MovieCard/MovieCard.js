@@ -1,27 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 import "./MovieCard.css";
 
 const MovieCard = (props) => {
   const { data } = props;
   const { title, poster_path, id } = data;
+  const navigate = useNavigate();
 
   const imageURL = `https://image.tmdb.org/t/p/original${poster_path}`;
   const toMovieDetailPage = `/movies/${id}`;
+
   return (
-    <Link to={toMovieDetailPage} className="movie-card">
-      <div>
-        <img src={imageURL} alt={title} />
-        <h3 style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        background: "black",
-        color: "white",
-        padding: "24px",
-      }}>{title}</h3>
-      </div>
-    </Link>
+    <div className="movie-card" onClick={() => navigate(toMovieDetailPage)}>
+      <img src={imageURL} alt={title} />
+      <h3 className="movie-card-title">{title}</h3>
+    </div>
+
   );
 };
 

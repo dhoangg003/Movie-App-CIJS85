@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Slider1 from "../../images/slider1.jpg"
 import Slider2 from "../../images/slider2.jpg"
 import Slider3 from "../../images/slider3.jpg"
+import "./SectionHero.css"
 
 
 export default class SectionHero extends Component {
@@ -17,26 +18,19 @@ export default class SectionHero extends Component {
     };
     return (
       <div>
-        <h2 style={{
-        display: "flex",
-
-        justifyContent: "center",
-        background: "black",
-        color: "white",
-        padding: "24px",
-      }} > Feature</h2>
+        <h2  > Feature</h2>
         <div className="SectionHero-taskbar">
           
         </div>
         <Slider {...settings}>
           <div>
-            <img src={Slider1}/>
+            <img className="img" src={Slider1}/>
           </div>
           <div>
-          <img src={Slider2}/>
+          <img  className="img" src={Slider2}/>
           </div>
           <div>
-          <img src={Slider3}/>
+          <img  className="img" src={Slider3}/>
           </div>
           
         </Slider>
