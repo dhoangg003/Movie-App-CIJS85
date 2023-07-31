@@ -1,51 +1,62 @@
-/* .sidebar-wrapper{
-    position: fixed;
-    left:0;
-} */
 .sidebar ul {
-    margin: 45px ;
-    
-}
-    
-.sidebar li {
-    list-style: none;
-    padding: 6px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+  margin: 45px;
 }
 
+.sidebar li {
+  list-style: none;
+  padding: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
 
 .sidebar li:hover {
-    background-color: #0fd959;
-    cursor: pointer;
+  /* background-color: #171616; */
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(165, 164, 164, 0.1);
 }
-.sidebar-avatar{
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 40px ;
-    padding: 10px;
-
+.sidebar-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 40px;
+  padding: 10px;
 }
 .btn2 {
-    font-weight: bold;
-    font-size: 1em;
-    text-decoration: none;
-    color: #0a0a0a;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
-    position: relative;
-    border: 3px solid #5ea27e;
-    border-radius: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  color: #0a0a0a;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  /* border: 3px solid #5ea27e; */
+  border-radius: 20px;
 }
-.btn2:hover{
-    background-color: #0fd959;
-}
+/* .btn2:hover {
+  background-color: #0fd959;
+} */
 .icon-with-text {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon-with-text svg {
-    margin-right: 15px; 
-  }
+  display: flex;
+  align-items: center;
+}
+
+.icon-with-text svg {
+  margin-right: 15px;
+}
+/* SideBar.css */
+
+/* ... (other CSS styles) */
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-with-text svg {
+  margin-right: 15px;
+}
+
+/* Add this CSS block to change the text color to red (#ff0000) when hovering over the icon-with-text */
+.icon-with-text:hover {
+  color: #4290c0; /* Change the color to your preferred hover text color (red in this case) */
+}

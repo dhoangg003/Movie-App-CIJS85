@@ -5,8 +5,9 @@
 }
 
 body {
-  background:  rgb(22, 21, 21);
+  background: rgb(22, 21, 21);
   color: #fff;
+  font-family: "Edu SA Beginner", cursive;
 }
 
 .container {
@@ -24,12 +25,10 @@ body {
   background: rgb(8, 8, 8);
   height: 100vh;
   position: fixed;
- 
 }
 
-
 .main-content {
-  margin-left:200px;
+  margin-left: 200px;
   width: calc(100% - 200px);
   overflow-y: auto;
 }
