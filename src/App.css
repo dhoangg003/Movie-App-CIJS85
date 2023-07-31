@@ -21,10 +21,15 @@ body {
 
 .sidebar-wrapper {
   width: 200px;
-  background: rgb(6, 6, 6);
+  background: rgb(8, 8, 8);
   height: 100vh;
+  position: fixed;
+ 
 }
 
+
 .main-content {
+  margin-left:220px;
   width: calc(100% - 200px);
+  overflow-y: auto;
 }

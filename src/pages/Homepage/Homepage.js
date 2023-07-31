@@ -1,7 +1,7 @@
 import "./Homepage.css";
 import MovieListSlider from "../../components/MovieListSlider/MovieListSlider";
 import useFetchMovieByType from "../../hooks/useFetchMoviesByType";
-import SectionHero from "../../components/SectionHero.css/SectionHero";
+import SectionHero from "../../components/SectionHero/SectionHero";
 
 const Homepage = () => {
   const { loading: popularLoading, data: popularMovies } =
@@ -14,15 +14,16 @@ const Homepage = () => {
   return (
     <div className="container">
       <SectionHero />
-      <MovieListSlider
-        movies={popularMovies}
-        movieCategoryTitle="Popular movies"
-        loading={popularLoading}
-      />
+     
       <MovieListSlider
         movies={topRatedMovies}
         movieCategoryTitle="Top rated movies"
         loading={topRatedLoading}
+      />
+       <MovieListSlider
+        movies={popularMovies}
+        movieCategoryTitle="PopularMovies"
+        loading={popularLoading}
       />
       <MovieListSlider
         movies={upcomingMovies}

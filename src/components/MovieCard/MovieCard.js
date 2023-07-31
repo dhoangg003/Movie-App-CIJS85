@@ -12,7 +12,7 @@ const MovieCard = (props) => {
     <Link to={toMovieDetailPage} className="movie-card">
       <div>
         <img src={imageURL} alt={title} />
-        <h6>{title}</h6>
+        <h3>{title}</h3>
       </div>
     </Link>
   );
