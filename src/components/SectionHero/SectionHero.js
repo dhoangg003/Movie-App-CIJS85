@@ -12,11 +12,19 @@ export default class SectionHero extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+
     };
     return (
       <div>
-        <h2> Feature</h2>
+        <h2 style={{
+        display: "flex",
+
+        justifyContent: "center",
+        background: "black",
+        color: "white",
+        padding: "24px",
+      }} > Feature</h2>
         <div className="SectionHero-taskbar">
           
         </div>
