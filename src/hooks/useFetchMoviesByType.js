@@ -19,7 +19,7 @@ const useFetchMovieByType = (movieType = "popular", isFetch = true) => {
     setLoading(true);
     try {
       const data = await APIServices.getMoviesByType(movieType);
-      setData(data.results);
+      setData(data.results);'4'
     } catch (error) {
       setError(error);
     } finally {
