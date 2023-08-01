@@ -1,7 +1,7 @@
 import React from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import Loading from "../Loading/Loading";
-
+import "./MovieListSlider.css"
 import Slider from "react-slick";
 
 
@@ -12,7 +12,7 @@ const MovieListSlider = (props) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     centerPadding: "24px",
   };
@@ -26,13 +26,7 @@ const MovieListSlider = (props) => {
 
   return (
     <div>
-      <h1 className="section-title" style={{
-        display: "flex",
-        justifyContent: "center",
-        background: " black",
-        color: "white",
-        padding: "10px",
-      }}>~~{movieCategoryTitle}~~ </h1>
+      <h1 className="section-title" s>{movieCategoryTitle}</h1>
       <div className="movie-list">
         <Slider {...settings} >
           {
