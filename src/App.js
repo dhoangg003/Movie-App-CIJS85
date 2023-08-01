@@ -3,9 +3,7 @@ import HomePage from "./pages/Homepage/Homepage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
-import Header from "./components/Header/Header";
-import MovieDetail from "./pages/MovieDetail/MovieDetail";
-
+import MovieDetail from "./pages/MovieDetail/MovieDetail";                          
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
 

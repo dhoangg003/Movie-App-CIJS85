@@ -10,6 +10,8 @@ const Homepage = () => {
     useFetchMovieByType("upcoming");
   const { loading: topRatedLoading, data: topRatedMovies } =
     useFetchMovieByType("top_rated");
+    const { loading: nowPlayingLoading, data: nowPlayingMovies } =
+    useFetchMovieByType("now_playing");
 
   return (
     <div className="container">
@@ -19,6 +21,11 @@ const Homepage = () => {
         movies={topRatedMovies}
         movieCategoryTitle="Top rated movies"
         loading={topRatedLoading}
+      />
+      <MovieListSlider
+        movies={nowPlayingMovies}
+        movieCategoryTitle="Now movies"
+        loading={nowPlayingLoading}
       />
        <MovieListSlider
         movies={popularMovies}
