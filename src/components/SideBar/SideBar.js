@@ -13,6 +13,10 @@ import { FaCog } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
+const handleSignOut = () => {
+  window.location.href = "/login";
+};
+
 const SideBar = () => {
   return (
     <div className="sidebar-wrapper">

@@ -49,19 +49,7 @@
 }
 
 .icon-with-text svg {
-  margin-right: 15px;
-}
-/* SideBar.css */
-
-/* ... (other CSS styles) */
-
-.icon-with-text {
-  display: flex;
-  align-items: center;
-}
-
-.icon-with-text svg {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /* Add this CSS block to change the text color to red (#ff0000) when hovering over the icon-with-text */
@@ -79,6 +67,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  gap: 10px;
 }
 .btn2:hover {
   color: #e13a24;
