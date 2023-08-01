@@ -6,15 +6,19 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
-import Login from "./components/Login/Login";
+import { useState } from "react";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleSignOut = () => {
+    setIsLoggedIn(false);
+  };
   return (
     <div className="app">
-      <SideBar className="SideBar" />
+      <SideBar handleSignOut={handleSignOut} />
       <main className="main-content">
         <Routes>
-          <Route path="/login" component={Login} />
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />

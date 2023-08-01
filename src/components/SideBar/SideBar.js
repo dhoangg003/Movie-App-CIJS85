@@ -13,11 +13,16 @@ import { FaCog } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-const handleSignOut = () => {
-  window.location.href = "/login";
-};
+import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate
 
 const SideBar = () => {
+  const navigate = useNavigate(); // Get the navigate function from react-router-dom
+
+  const handleSignOut = () => {
+    // Perform any sign-out actions here if needed
+    navigate("/login"); // Navigate to the login page after signing out
+  };
+
   return (
     <div className="sidebar-wrapper">
       <div className="sidebar-avatar">
@@ -65,7 +70,7 @@ const SideBar = () => {
           <li className="icon-with-text">
             <FaUserPlus /> Member
           </li>
-          <button className="btn2">
+          <button className="btn2" onClick={handleSignOut}>
             <FaArrowRight />
             Sign Out
           </button>
