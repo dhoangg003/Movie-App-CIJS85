@@ -26,7 +26,8 @@ const MovieListSlider = (props) => {
 
   return (
     <div>
-      <h1 className="section-title" s>{movieCategoryTitle}</h1>
+      <h1 className="section-title" s>{movieCategoryTitle} </h1>
+      <hr />
       <div className="movie-list">
         <Slider {...settings} >
           {

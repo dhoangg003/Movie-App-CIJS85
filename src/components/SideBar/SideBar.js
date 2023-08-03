@@ -1,26 +1,24 @@
 import React from "react";
 import "./SideBar.css";
 import logo1 from "../../images/logo1.jpg";
-import { FaHome } from "react-icons/fa";
-import { FaFilm } from "react-icons/fa";
-import { FaTv } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import { FaList } from "react-icons/fa";
-import { FaThumbsUp } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
-import { FaHandPointUp } from "react-icons/fa";
-import { FaCog } from "react-icons/fa";
-import { FaUserPlus } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { FaHome, FaFilm, FaTv, FaStar, FaList, FaThumbsUp, FaHeart, FaHandPointUp, FaCog, FaUserPlus, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 
 import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate
 
 const SideBar = () => {
+
   const navigate = useNavigate(); // Get the navigate function from react-router-dom
 
   const handleSignOut = () => {
     // Perform any sign-out actions here if needed
     navigate("/login"); // Navigate to the login page after signing out
+  
+  };
+  const handleHome = () => {
+   
+    navigate("/"); // Navigate to the login page after signing out
+  
   };
 
   return (
@@ -30,7 +28,7 @@ const SideBar = () => {
       </div>
       <div className="sidebar">
         <ul>
-          <li className="icon-with-text">
+          <li className="icon-with-text"  onClick={handleHome}>
             <FaHome /> Home
           </li>
           <li className="icon-with-text">
@@ -81,3 +79,7 @@ const SideBar = () => {
 };
 
 export default SideBar;
+
+
+
+

@@ -1,4 +1,4 @@
-.sidebar ul {
+/* .sidebar ul {
   margin: 45px;
 }
 
@@ -29,20 +29,6 @@
   height: 100px;
 }
 
-/* .btn2 {
-  font-weight: bold;
-  font-size: 1em;
-  text-decoration: none;
-  color: #0a0a0a;
-  display: inline-block;
-  padding: 10px 40px 10px 40px;
-  position: relative;
- 
-  border-radius: 20px;
-} */
-/* .btn2:hover {
-  background-color: #0fd959;
-} */
 .icon-with-text {
   display: flex;
   align-items: center;
@@ -52,16 +38,16 @@
   margin-right: 10px;
 }
 
-/* Add this CSS block to change the text color to red (#ff0000) when hovering over the icon-with-text */
+
 .icon-with-text:hover {
-  color: #4290c0; /* Change the color to your preferred hover text color (red in this case) */
+  color: #4290c0; 
 }
 .btn2 {
-  font-size: 14px; /* Adjust the font size for the button */
-  padding: 5px 20px; /* Adjust the padding to make the button smaller */
-  margin-top: 15px; /* Add some spacing between the last list item and the button */
-  background-color: #423f3f; /* Change the button background color to your preferred color */
-  color: #fff; /* Change the button text color to white */
+  font-size: 14px; 
+  padding: 5px 20px; 
+  margin-top: 15px;
+  background-color: #423f3f; 
+  color: #fff; 
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -71,4 +57,101 @@
 }
 .btn2:hover {
   color: #e13a24;
+} */
+
+
+
+
+
+
+
+
+.sidebar-wrapper {
+  background-color: #1a202c;
+  width: 240px;
+  height: 100%;
+  padding: 16px;
+  color: #fff;
 }
+
+.sidebar-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.sidebar {
+  margin-top: 32px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ul li svg {
+  margin-right: 12px;
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icon-with-text:hover {
+  color: #e91e63;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 1px solid #e91e63;
+  color: #e91e63;
+  padding: 8px 16px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 24px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn2:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+
+ @media (max-width: 768px) {
+  .sidebar-wrapper {
+    width: 100%;
+    padding: 16px;
+  }
+  .sidebar {
+    margin-top: 16px;
+  }
+  .sidebar-avatar img {
+    width: 80px;
+    height: 80px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  .btn2 {
+    font-size: 14px;
+  }
+}
+
