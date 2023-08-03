@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./LoginPage.css";
-import slider3 from "../../images/slider3.jpg";
+import slider5 from "../../images/slider5.jpg";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +21,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${slider3})` }} className="hero">
+    <div style={{ backgroundImage: `url(${slider5})` }} className="hero">
       <div className="login-container">
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
