@@ -191,7 +191,7 @@ box-sizing: border-box;
   margin: 0 5px 0 0;
   padding: 3px 0 15px 0px;
   display: inline-block;
-  
+  align-items: flex-end;
   font-size:0.8em
 }
 
