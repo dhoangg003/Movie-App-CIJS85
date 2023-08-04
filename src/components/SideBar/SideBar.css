@@ -1,4 +1,4 @@
-/* .sidebar ul {
+.sidebar ul {
   margin: 45px;
 }
 
@@ -57,7 +57,7 @@
 }
 .btn2:hover {
   color: #e13a24;
-} */
+}
 
 
 
@@ -65,10 +65,10 @@
 
 
 
-
+/* 
 .sidebar-wrapper {
-  background-color: #1a202c;
-  width: 240px;
+  background-color: #222325;
+  width: 200px;
   height: 100%;
   padding: 16px;
   color: #fff;
@@ -154,4 +154,4 @@ ul li svg {
     font-size: 14px;
   }
 }
-
+ */

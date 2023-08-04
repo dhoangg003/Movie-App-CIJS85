@@ -1,46 +1,4 @@
-
-
-
-
-.movie-card {
-  cursor: pointer;
-  padding-right: 16px;
-  transition: transform 0.3s ease;
-  gap: 2px;
-}
-
-.movie-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 24px;
-  border-radius: 8px;
-  transition: opacity 1.1s ease;
-}
-
-.movie-card .movie-card-title {
-  color :rgb(181 181 181);
-  padding: 24px;
-  text-decoration: none;
-  transition: opacity 0.7s ease; 
-}
-
-.movie-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.movie-card img:hover {
-  opacity: 0.8;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.movie-card .movie-card-title:hover {
-  opacity: 1;
-  color:rgb(255, 255, 255);
-  
-}
-/* @import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
 html,body{
   height:100%
 }
@@ -61,7 +19,6 @@ html,body{
   box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
   text-align: center;
   transition:all 0.4s;
-  background: url(https://unsplash.it/600/800?image=1061) center no-repeat;
   background-size: 100%;
 }
 .blog-card a{ 
@@ -320,7 +277,9 @@ box-sizing: border-box;
 }
 
 
+/*  ================  */
 
+/* ignore this bit :P */
 #profile-badges:after {
     content: "BRO";
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
@@ -451,4 +410,4 @@ box-sizing: border-box;
 }
 .meta{
   box-shadow:none !important
-} */
+}

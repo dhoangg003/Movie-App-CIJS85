@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="app">
       <SideBar handleSignOut={handleSignOut} />
+     
       <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
