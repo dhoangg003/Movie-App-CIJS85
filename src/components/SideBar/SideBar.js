@@ -86,29 +86,35 @@
 import React from "react";
 import "./SideBar.css";
 import logo1 from "../../images/logo1.jpg";
-import { FaHome, FaFilm, FaTv, FaStar, FaList, FaThumbsUp, FaHeart, FaHandPointUp, FaCog, FaUserPlus, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import {
+  FaHome,
+  FaFilm,
+  FaTv,
+  FaStar,
+  FaList,
+  FaThumbsUp,
+  FaHeart,
+  FaHandPointUp,
+  FaCog,
+  FaUserPlus,
+  FaArrowRight,
+  FaArrowLeft,
+} from "react-icons/fa";
 
-
-import { Link, useNavigate, useLocation } from "react-router-dom"; // Import Link, useNavigate, and useLocation
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const SideBar = () => {
-
-  const navigate = useNavigate(); // Get the navigate function from react-router-dom
-  const location = useLocation(); // Get the location object from react-router-dom
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSignOut = () => {
-
-    // Perform any sign-out actions here if needed
-    navigate("/login"); // Navigate to the login page after signing out
-  
+    navigate("/login");
   };
   const handleHome = () => {
-   
-    navigate("/"); // Navigate to the login page after signing out
-  
-
-
-
+    navigate("/");
+  };
+  const handleSetting = () => {
+    navigate("/settings");
   };
 
   return (
@@ -118,7 +124,7 @@ const SideBar = () => {
       </div>
       <div className="sidebar">
         <ul>
-          <li className="icon-with-text"  onClick={handleHome}>
+          <li className="icon-with-text" onClick={handleHome}>
             <FaHome /> Home
           </li>
           <li className="icon-with-text">
@@ -128,8 +134,8 @@ const SideBar = () => {
           <li className="icon-with-text">
             <FaTv /> Shows
           </li>
-          </ul>
-          <ul>
+        </ul>
+        <ul>
           <li className="icon-with-text">
             <FaStar /> Rated
           </li>
@@ -154,7 +160,7 @@ const SideBar = () => {
         </ul>
 
         <ul>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handleSetting}>
             <FaCog /> Setting
           </li>
           <li className="icon-with-text">
@@ -171,7 +177,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-
-
-
-

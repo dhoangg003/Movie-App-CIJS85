@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Slider1 from "../../images/slider1.jpg";
 import Slider2 from "../../images/slider2.jpg";
 import Slider4 from "../../images/slider4.jpg";
+
 import "./SectionHero.css";
 
 export default class SectionHero extends Component {
