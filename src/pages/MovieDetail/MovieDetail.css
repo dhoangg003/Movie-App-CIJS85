@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
+/* @import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
 html,body{
   height:100%
 }
@@ -280,7 +280,7 @@ box-sizing: border-box;
 /*  ================  */
 
 /* ignore this bit :P */
-#profile-badges:after {
+/* #profile-badges:after {
     content: "BRO";
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     font-size:13px;
@@ -410,4 +410,78 @@ box-sizing: border-box;
 }
 .meta{
   box-shadow:none !important
+} */ 
+/*PEN STYLES*/
+
+
+.container section-wrapper{
+  width:100%;
+}
+
+
+
+
+
+.detail-title {
+  color: #fb9039;
+  -webkit-text-fill-color: #fb9039;
+  line-height: 1;
+}
+.hero-content{
+  width:70%;
+  float:right;
+  margin-top: 20%;
+  font-size: 20px;
+}
+.hero-img {
+  width:20%;
+   float:left;
+  margin-left: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  --height: 30rem;
+  height: var(--height);
+  width: auto;
+  overflow: hidden;
+  padding: 0 0 1.5rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-img img {
+  height: 100%;
+  max-height: 100%;
+
+}
+
+
+.detail-overview {
+  padding-top: 2rem;
+}
+.visit-website {
+  padding-top:50px;
+  transform: translateY(-50%);
+}
+.btn-visit-website {
+
+  font-weight: 800;
+  padding: 0.5rem 0.75rem;
+  /* background-color: #fb9039; */
+  border: 3px solid #fb9039;
+  border-radius: 0.4rem;
+}
+.btn-visit-website:hover {
+  animation: pulse 1s ease-in-out;
+}
+
+
+
+
+
+
+/* animation pulse */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 1.25rem #e2ea6c, 0 0 3rem #fb9039;
+  }
 }

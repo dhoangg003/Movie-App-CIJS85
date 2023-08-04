@@ -24,7 +24,7 @@ const Homepage = () => {
       />
       <MovieListSlider
         movies={nowPlayingMovies}
-        movieCategoryTitle="Now movies"
+        movieCategoryTitle="Now playing movies"
         loading={nowPlayingLoading}
       />
        <MovieListSlider
