@@ -15,7 +15,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SideBar = ({ signOut }) => {
   const navigate = useNavigate();
@@ -66,7 +66,9 @@ const SideBar = ({ signOut }) => {
             <FaThumbsUp /> Likes
           </li>
           <li className="icon-with-text">
-            <FaHeart /> Favourite
+            <Link to="/favorite">
+              <FaHeart /> Favourite
+            </Link>
           </li>
           <li className="icon-with-text">
             <FaHandPointUp /> For You

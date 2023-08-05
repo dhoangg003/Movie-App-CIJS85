@@ -8,6 +8,7 @@ import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
 import { createContext, useState } from "react";
+import FavoritePage from "./pages/FavoritePage/FavoritePage";
 
 export const AuthContext = createContext();
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             {/* <Route path="/settings" element={<SettingPage />} /> */}
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="/favorite" element={<FavoritePage />} />
             <Route path="/movies/:movieId" element={<MovieDetail />} />
             <Route path="*" element={<SettingPage />} />
           </Routes>
