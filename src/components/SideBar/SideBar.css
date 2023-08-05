@@ -32,10 +32,13 @@
 .icon-with-text {
   display: flex;
   align-items: center;
+
+ 
 }
 
 .icon-with-text svg {
   margin-right: 10px;
+  
 }
 
 

@@ -22,7 +22,7 @@ const MovieDetail = () => {
     }
   };
 
-  //   Call API fetching file detail by id
+
   useEffect(() => {
     fetchMovieDetail();
   }, []);
@@ -36,22 +36,6 @@ const MovieDetail = () => {
   }
 
   return (
-
-    //   <div class="blog-card " style={cardStyle}>
-    //   <div class="title-content">
-    //     <h3><a href="#">{title}</a></h3>
-
-    //   </div>
-    //   <div class="card-info">{overview} <a href="#">play video<span class="licon icon-arr icon-black"></span></a>
-    //   </div>
-    //   <div class="utility-info">
-    //     <ul class="utility-list">
-    //       <li>{vote_average}<FaStar/></li>    
-    //     </ul>
-    //   </div>
-    //   <div class="gradient-overlay"></div>
-    //   <div class="color-overlay"></div>
-    // </div>
 
     <div className="container section-wrapper">
 

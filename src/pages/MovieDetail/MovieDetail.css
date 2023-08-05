@@ -459,11 +459,15 @@ box-sizing: border-box;
   padding-top: 2rem;
 }
 .visit-website {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
   padding-top:50px;
   transform: translateY(-50%);
 }
 .btn-visit-website {
-
+  
   font-weight: 800;
   padding: 0.5rem 0.75rem;
   /* background-color: #fb9039; */

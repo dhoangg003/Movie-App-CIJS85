@@ -24,7 +24,12 @@ const LoginPage = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${slider5})` }} className="hero">
+    <div style={{
+      backgroundImage: `url(${slider5})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat"
+    }} className="hero">
       <div className="login-container">
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
@@ -50,6 +55,7 @@ const LoginPage = () => {
             Login
           </button>
         </form>
+
         <p>
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
