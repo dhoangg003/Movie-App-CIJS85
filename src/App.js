@@ -7,29 +7,41 @@ import SettingPage from "./pages/SettingPage/SettingPage";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
-import { useState } from "react";
+import { createContext, useState } from "react";
+
+export const AuthContext = createContext();
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleSignOut = () => {
+  const signOut = () => {
     setIsLoggedIn(false);
   };
+  const logIn = () => {
+    setIsLoggedIn(true);
+  };
   return (
-    <div className="app">
-      <SideBar handleSignOut={handleSignOut} />
-
-      <main className="main-content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          {/* <Route path="/settings" element={<SettingPage />} /> */}
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/movies/:movieId" element={<MovieDetail />} />
-          <Route path="*" element={<SettingPage />} />
-        </Routes>
-      </main>
-    </div>
+    <AuthContext.Provider
+      value={{
+        isLoggedIn,
+        signOut,
+        logIn,
+      }}
+    >
+      <div className="app">
+        {isLoggedIn && <SideBar signOut={signOut} />}
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            {/* <Route path="/settings" element={<SettingPage />} /> */}
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/movies/:movieId" element={<MovieDetail />} />
+            <Route path="*" element={<SettingPage />} />
+          </Routes>
+        </main>
+      </div>
+    </AuthContext.Provider>
   );
 }
 

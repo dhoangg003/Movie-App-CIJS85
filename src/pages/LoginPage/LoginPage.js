@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 import slider5 from "../../images/slider5.jpg";
+import { AuthContext } from "../../App";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { logIn } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -13,6 +15,7 @@ const LoginPage = () => {
     // For simplicity, we'll just check if the email and password are not empty
     if (email.trim() !== "" && password.trim() !== "") {
       // If the login is successful, navigate to the homepage
+      logIn();
       navigate("/");
     } else {
       // If the login fails, you can show an error message or handle it as needed
