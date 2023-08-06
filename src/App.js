@@ -8,7 +8,7 @@ import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import "./App.css";
 import SideBar from "./components/SideBar/SideBar";
 import { createContext, useState } from "react";
-import FavoritePage from "./pages/FavoritePage/FavoritePage";
+import FavoritePage from "./pages/FavoritesPage/FavoritesPage";
 
 export const AuthContext = createContext();
 

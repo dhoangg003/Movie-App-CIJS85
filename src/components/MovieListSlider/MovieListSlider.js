@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from 'react';
 import MovieCard from "../MovieCard/MovieCard";
 import Loading from "../Loading/Loading";
-import "./MovieListSlider.css"
+import "./MovieListSlider.css";
 import Slider from "react-slick";
-
+import { FaStar } from "react-icons/fa";
 
 const MovieListSlider = (props) => {
   const { movies = [], movieCategoryTitle, loading } = props;
+  const [favoriteMovies, setFavoriteMovies] = useState([]);
+
+  const handleAddToFavorites = (selectedMovie) => {
+    const favoritesFromStorage = localStorage.getItem('favorites');
+    const favorites = favoritesFromStorage ? JSON.parse(favoritesFromStorage) : [];
+
+    const isMovieFavorite = favorites.some((movie) => movie.id === selectedMovie.id);
+
+    if (!isMovieFavorite) {
+      favorites.push(selectedMovie);
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+      setFavoriteMovies(favorites);
+    }
+  };
 
   const settings = {
     dots: true,
@@ -17,23 +31,29 @@ const MovieListSlider = (props) => {
     centerPadding: "24px",
   };
 
-
   if (loading) {
-    return <div>
-      <Loading />
-    </div>
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   return (
     <div>
-      <h1 className="section-title" s>{movieCategoryTitle} </h1>
+      <h1 className="section-title">{movieCategoryTitle}</h1>
       <div className="movie-list">
-        <Slider {...settings} >
-          {
-            movies.map((movie) => {
-              return <MovieCard data={movie} key={movie.id} />;
-            })
-          }
+        <Slider {...settings}>
+          {movies.map((movie) => (
+            <div key={movie.id} className="movie-card-wrapper">
+              <MovieCard data={movie} />
+              <div className="button-wrapper">
+                <button onClick={() => handleAddToFavorites(movie)} className="buttonfavorite">
+                  <FaStar />
+                </button>
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
