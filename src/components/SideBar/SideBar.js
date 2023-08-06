@@ -66,7 +66,7 @@ const SideBar = ({ signOut }) => {
             <FaThumbsUp /> Likes
           </li>
           <li className="icon-with-text">
-            <Link to="/favorite">
+            <Link to="/favorite" className="favorite-link">
               <FaHeart /> Favourite
             </Link>
           </li>
