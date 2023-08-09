@@ -13,6 +13,7 @@ import {
   FaCog,
   FaUserPlus,
   FaArrowRight,
+  FaFire,
 } from "react-icons/fa";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -27,9 +28,38 @@ const SideBar = ({ signOut }) => {
   const handleHome = () => {
     navigate("/");
   };
+  const handlePopular = () => {
+    navigate("/popular");
+  };
+  const handleToprated = () => {
+    navigate("/toprated");
+  };
+  const handleLikePage = () => {
+    navigate("/like");
+  };
+  const handleGenrePage = () => {
+    navigate("/genre");
+  };
   const handleSetting = () => {
     navigate("/settings");
   };
+  const handleMovies = () => {
+    navigate("/movies");
+  };
+  const handleShows = () => {
+    navigate("/Show");
+  };
+  const handleForyou = () => {
+    navigate("/foryou");
+  };
+  const handleMember = () => {
+    navigate("/member");
+  };
+  const handleFavorites = () => {
+    navigate("/favorite");
+  };
+
+  
 
   return (
     <div className="sidebar-wrapper">
@@ -41,36 +71,37 @@ const SideBar = ({ signOut }) => {
           <li className="icon-with-text" onClick={handleHome}>
             <FaHome /> Home
           </li>
-          <li className="icon-with-text">
+          <li className="icon-with-text"onClick={handleMovies}>
             <FaFilm />
             Movies
           </li>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handleShows}>
             <FaTv /> Shows
           </li>
         </ul>
         <ul>
-          <li className="icon-with-text">
-            <FaStar /> Rated
+          <li className="icon-with-text" onClick={handleToprated}>
+            <FaStar /> Top-Rated
           </li>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handlePopular}>
+            <FaFire /> Popular
+          </li>
+          <li className="icon-with-text" onClick={handleGenrePage}>
             <FaList /> Genre
-          </li>
-          <li className="icon-with-text">
-            <FaList /> Playlist
           </li>
         </ul>
 
         <ul>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handleLikePage}>
+          
             <FaThumbsUp /> Likes
           </li>
-          <li className="icon-with-text">
-            <Link to="/favorite" className="favorite-link">
+          <li className="icon-with-text" onClick={handleFavorites}>
+            {/* <Link to="/favorite" className="favorite-link"> */}
               <FaHeart /> Favourite
-            </Link>
+            {/* </Link> */}
           </li>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handleForyou}>
             <FaHandPointUp /> For You
           </li>
         </ul>
@@ -79,7 +110,7 @@ const SideBar = ({ signOut }) => {
           <li className="icon-with-text" onClick={handleSetting}>
             <FaCog /> Setting
           </li>
-          <li className="icon-with-text">
+          <li className="icon-with-text" onClick={handleMember}>
             <FaUserPlus /> Member
           </li>
           <button className="btn2" onClick={handleSignOut}>

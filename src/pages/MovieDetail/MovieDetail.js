@@ -45,7 +45,7 @@ const MovieDetail = () => {
         <div className="hero-content">
           <h2 className="big-title detail-title">{title}_<FaStar/>{vote_average}</h2>
           <div className="detail-overview"><p>{overview}</p></div>
-          <div className="visit-website"><a className="btn-visit-website" >Play video </a> </div>
+          <div className="visit-website"><a className="btn-visit-website" >Play </a> </div>
         </div>
       </div>
 

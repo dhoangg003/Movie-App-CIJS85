@@ -1,8 +1,8 @@
-import "./Homepage.css";
+
 import MovieListSlider from "../../components/MovieListSlider/MovieListSlider";
 import useFetchMovieByType from "../../hooks/useFetchMoviesByType";
-import SectionHero from "../../components/SectionHero/SectionHero";
-
+import "./GenrePage.css"
+import { FaSearch } from "react-icons/fa";
 const Homepage = () => {
   const { loading: popularLoading, data: popularMovies } =
     useFetchMovieByType("popular");
@@ -15,8 +15,11 @@ const Homepage = () => {
 
   return (
     <div className="container">
-      <SectionHero />
       
+      <div className="box">
+          <input type="text" placeholder="Search here" />
+          <a><FaSearch/></a>
+        </div>
       <MovieListSlider
         movies={topRatedMovies}
         movieCategoryTitle="Top rated movies"
