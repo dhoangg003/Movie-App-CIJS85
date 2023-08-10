@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import Slider from "react-slick";
 import "./FavoritesPage.css"
+import { FaSearch } from 'react-icons/fa';
 const FavoritesPage = () => {
   const [favoriteMovies, setFavoriteMovies] = useState([]);
   const settings = {
     dots: false,
-   
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    centerPadding: "24px",
+    centerPadding: "5px",
   };
 
   useEffect(() => {
@@ -22,7 +22,14 @@ const FavoritesPage = () => {
 
   return (
     <div className="favorites-list">
-      <h1>Favorite Movies</h1>
+     <div className="row">
+      <h2 className="text">Favorites</h2>
+        <div className="box">
+          <input type="text" placeholder="Search here" />
+          <a><FaSearch /></a>
+        </div>
+       
+      </div>
       <Slider {...settings}>
       {favoriteMovies.map((movie) => (
         

@@ -98,7 +98,7 @@ const SideBar = ({ signOut }) => {
           </li>
           <li className="icon-with-text" onClick={handleFavorites}>
             {/* <Link to="/favorite" className="favorite-link"> */}
-              <FaHeart /> Favourite
+              <FaHeart /> Favorite
             {/* </Link> */}
           </li>
           <li className="icon-with-text" onClick={handleForyou}>

@@ -3,7 +3,7 @@ import MovieCard from "../MovieCard/MovieCard";
 import Loading from "../Loading/Loading";
 import "./MovieListSlider.css";
 import Slider from "react-slick";
-import { FaStar } from "react-icons/fa";
+import { FaBookmark} from "react-icons/fa";
 
 const MovieListSlider = (props) => {
   const { movies = [], movieCategoryTitle, loading } = props;
@@ -49,7 +49,7 @@ const MovieListSlider = (props) => {
               <MovieCard data={movie} />
               <div className="button-wrapper">
                 <button onClick={() => handleAddToFavorites(movie)} className="buttonfavorite">
-                  <FaStar />
+                  <FaBookmark />
                 </button>
               </div>
             </div>

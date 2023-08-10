@@ -4,6 +4,7 @@ import APIServices from "../../services/APIServices";
 import Loading from "../../components/Loading/Loading";
 import "./MovieDetail.css"
 import { FaStar } from "react-icons/fa";
+import ReactPlayer from "react-player";
 const MovieDetail = () => {
   const params = useParams();
   const [movieDetail, setMovieDetail] = useState({});
@@ -45,8 +46,17 @@ const MovieDetail = () => {
         <div className="hero-content">
           <h2 className="big-title detail-title">{title}_<FaStar/>{vote_average}</h2>
           <div className="detail-overview"><p>{overview}</p></div>
-          <div className="visit-website"><a className="btn-visit-website" >Play </a> </div>
+          <div className="visit-website"><a className="btn-visit-website" >Play video</a> </div>
         </div>
+        <div className="video-container" >
+        <div className="videoyoutube-wrapper" id="video-container">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=9DiiAcCidSc"
+            width="100%"
+            height="800px"
+          />
+        </div>
+      </div>
       </div>
 
 
