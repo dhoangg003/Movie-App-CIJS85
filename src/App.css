@@ -21,7 +21,6 @@ body {
 }
 
 .sidebar-wrapper {
-
   background: rgb(35, 34, 34);
   height: 100vh;
   position: fixed;
@@ -30,5 +29,4 @@ body {
 .main-content {
   margin-left: 200px;
   width: calc(100% - 200px);
-  overflow-y: auto;
 }

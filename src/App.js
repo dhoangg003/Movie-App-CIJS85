@@ -7,8 +7,8 @@ import SettingPage from "./pages/SettingPage/SettingPage";
 import PopularPage from "./pages/PopularPage/PopularPage";
 import TopRatedPage from "./pages/TopRatedPage/TopRatedPage";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
-import GenrePage from "./pages/GenrePage/GenrePage"
-import LikePage from"./pages/LikesPage/LikesPage";
+import GenrePage from "./pages/GenrePage/GenrePage";
+import LikePage from "./pages/LikesPage/LikesPage";
 import MoviesPage from "./pages/MoviesPage/MoviesPage";
 import ShowsPage from "./pages/ShowsPage/ShowsPage";
 import ForyouPage from "./pages/ForyouPage/ForyouPage";
